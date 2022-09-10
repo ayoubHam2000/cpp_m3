@@ -2,13 +2,15 @@
 
 int	main()
 {
-	ClapTrap orator = ClapTrap("m7job");
-	ClapTrap goldStein = ClapTrap("rabi3a");
-	ClapTrap a(goldStein);
+	ClapTrap	a("CRobot A");
+	ClapTrap	b("CRobot B");
+	ClapTrap	c("CRobot C");
+	ClapTrap	cloneOfa(a);
 
-	orator.attack("rabi3a");
-	goldStein.takeDamage(10);
-	orator.beRepaired(10);
-	orator = goldStein;
-	return 0;
+	a.attack("Robot B");
+	b.beRepaired(20);
+	a.takeDamage(10);
+	a = ClapTrap(b);
+
+	return (0);
 }

@@ -1,5 +1,8 @@
 FILES = \
 	clapTrap.cpp \
+	ScavTrap.cpp \
+	FragTrap.cpp \
+	DiamondTrap.cpp \
 	main.cpp
 
 OBJ_DIR = _OUT/
@@ -10,7 +13,7 @@ DEPS = $(OBJ:.o=.d)
 DEPFLAGS = -MMD -MF $(@:.o=.d)
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = clapTrap
+NAME = diamondTrap
 
 all: $(NAME)
 

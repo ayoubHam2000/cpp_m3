@@ -6,6 +6,12 @@ ClapTrap::ClapTrap(const std::string &name):
 	std::cout << "ClapTrap " << _name << " just landed" << std::endl;
 };
 
+ClapTrap::ClapTrap(const std::string &name, unsigned int _health_point, unsigned int _energy_point, unsigned int _attack_damage):
+	_name(name), _health_point(_health_point), _energy_point(_energy_point), _attack_damage(_attack_damage)
+{
+	std::cout << "ClapTrap " << _name << " just enter" << std::endl;
+}
+
 ClapTrap::ClapTrap(const ClapTrap &other):
 	_name(other._name),
 	_health_point(other._health_point),

@@ -1,5 +1,8 @@
 **/*.o
 **/*.d
 .vscode/
-_OUT
-clap_trap
+_OUT/
+clapTrap
+scavTrap
+fragTrap
+diamondTrap
