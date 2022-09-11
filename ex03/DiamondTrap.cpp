@@ -2,11 +2,11 @@
 
 DiamondTrap::DiamondTrap(const std::string &name):_name(name)
 {
-	_health_point = ScavTrap::_health_point;
-	_attack_damage = FragTrap::_attack_damage;
-	_energy_point = FragTrap::_energy_point;
+	_health_point = 100;
+	_attack_damage = 30;
+	_energy_point = 50;
 	ClapTrap::_name = name + "_clap_name";
-	std::cout << "DiamondTrap " << FragTrap::_attack_damage << _name << " is here" << std::endl;
+	std::cout << "DiamondTrap " << _name << " is here" << std::endl;
 }
 
 DiamondTrap::DiamondTrap(const DiamondTrap &other): 
